@@ -10,10 +10,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProductComponent } from './components/product/product.component';
+import { ProducDetailsComponent } from './components/produc-details/produc-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductComponent,
+    ProducDetailsComponent
   ],
   imports: [
     BrowserModule,
