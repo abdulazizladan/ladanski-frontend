@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { FormsModule } from '@angular/forms';
+//import { ChartsModule } from 'ng2-charts';
+
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -21,7 +24,9 @@ import { ProducDetailsComponent } from './components/produc-details/produc-detai
   ],
   imports: [
     BrowserModule,
-    FlexLayoutModule,
+    FormsModule,
+    //ChartsModule,
+    FlexLayoutModule,    
     MatIconModule,
     MatToolbarModule,
     MatCardModule,
