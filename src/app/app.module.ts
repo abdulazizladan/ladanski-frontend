@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     FlexLayoutModule,
     MatToolbarModule,
+    MatButtonModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
