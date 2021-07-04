@@ -1,40 +1,56 @@
 <div style="height: 100%;" fxLayout="column">
-    <mat-toolbar color="primary">
+    <mat-toolbar class="mat-elevation-z1">
         <mat-toolbar-row>
             <img src="../../assets/logo.svg">
             <span fxFlex="1 1 auto"></span>
-            <span>
-                <button mat-flat-button color="primary">
+            <span fxHide fxShow.gt-sm>
+                <button mat-button>
                     Home
                 </button>
-                <button mat-flat-button color="primary">
+                <button mat-button>
                     About
                 </button>
-                <button mat-flat-button color="primary">
+                <button mat-button>
                     Services
                 </button>
-                <button mat-flat-button color="primary">
+                <button mat-button>
                     Experiences
                 </button>
-                <button mat-flat-button color="primary">
+                <button mat-button>
                     Skills
                 </button>
-                <button mat-flat-button color="primary">
+                <button mat-button>
                     Portfolio
                 </button>
-                <button mat-flat-button color="primary">
+                <button mat-button>
                     Testimonials
                 </button>
-                <button mat-flat-button color="primary">
+                <button mat-button>
                     Contact
                 </button>
             </span>
+            <button fxHide fxShow.lt-md mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <ng-template matMenuContent>
+                    <button mat-menu-item>Home</button>
+                    <button mat-menu-item>About</button>
+                    <button mat-menu-item>Services</button>
+                    <button mat-menu-item>Experiences</button>
+                    <button mat-menu-item>Skills</button>
+                    <button mat-menu-item>Portfolio</button>
+                    <button mat-menu-item>Testimonials</button>
+                    <button mat-menu-item>Contact</button>
+                </ng-template>
+              </mat-menu>
         </mat-toolbar-row>
         
     </mat-toolbar>
     <div fxFlex="1 1 auto" fxLayoutAlign="center center">
         Site under construction
     </div>
+
 </div>
 
 Home, About, Services, Experiences, Skills, Portfolio, Testimonials, Contact
