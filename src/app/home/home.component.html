@@ -45,10 +45,16 @@
                 </ng-template>
               </mat-menu>
         </mat-toolbar-row>
-        
+
     </mat-toolbar>
-    <div fxFlex="1 1 auto" fxLayoutAlign="center center">
-        Site under construction
+    <div fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center center">
+
+      <!-- Banner -->
+      <div></div>
+      <!-- Projects -->
+      <div fxLayout.xs="column" fxLayoutGap="20px" fxLayout.gt-xs="row-wrap">
+        <app-project-card *ngFor="let project of projects" [data]='project'></app-project-card>
+      </div>
     </div>
 
 </div>

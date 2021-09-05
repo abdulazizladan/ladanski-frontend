@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -17,14 +19,19 @@ import { HomeComponent } from './home/home.component';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
+import { ProjectCardComponent } from './project-card/project-card.component';
+import { InMemoryDbServiceService } from './services/in-memory-db-service.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDbServiceService),
     FlexLayoutModule,
     MatToolbarModule,
     MatCardModule,
