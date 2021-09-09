@@ -1,6 +1,6 @@
-<div style="height: 100%;" fxLayout="column">
-    <mat-toolbar class="mat-elevation-z1">
-        <mat-toolbar-row>
+<div style="height: 100%;" fxLayout="column" fxLayoutGap="10px;">
+    <mat-toolbar color="primary" class="mat-elevation-z1" style="min-height: 40px !important; height: 30px !important;">
+        <mat-toolbar-row fxLayout="row" style="min-height: 40px !important; height: 30px !important;">
             <img src="../../assets/logo.svg">
             <span fxFlex="1 1 auto"></span>
             <span fxHide fxShow.gt-sm>
@@ -50,11 +50,33 @@
     <div fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center center">
 
       <!-- Banner -->
+      <div style="width: 100%; background-color: grey;aspect-ratio: 20/4;"></div>
+
+      <!-- About -->
       <div></div>
-      <!-- Projects -->
+
+      <!-- Services-->
+      <div></div>
+
+      <!--Experiences-->
+      <div></div>
+
+      <!-- Skills-->
+      <div></div>
+
+      <!-- Portfolio-->
       <div fxLayout.xs="column" fxLayoutGap="20px" fxLayout.gt-xs="row-wrap">
         <app-project-card *ngFor="let project of projects" [data]='project'></app-project-card>
       </div>
+      <div></div>
+
+      <!-- Testimonials-->
+      <div></div>
+
+      <!-- Contact -->
+      <div></div>
+      <!-- Projects -->
+
     </div>
 
 </div>
