@@ -47,36 +47,43 @@
         </mat-toolbar-row>
 
     </mat-toolbar>
-    <div fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center center">
 
-      <!-- Banner -->
-      <div style="width: 100%; background-color: grey;aspect-ratio: 20/4;"></div>
+    <div id="main" fxLayout="row" fxLayoutAlign="center">
+      <div fxFlex="100%" fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center center">
+        <!-- Banner -->
+        <div id="hero"></div>
 
-      <!-- About -->
-      <div></div>
+        <!-- About -->
+        <div></div>
 
-      <!-- Services-->
-      <div></div>
+        <!-- Services-->
+        <div></div>
 
-      <!--Experiences-->
-      <div></div>
+        <!--Experiences-->
+        <div></div>
 
-      <!-- Skills-->
-      <div></div>
+        <!-- Skills-->
+        <div></div>
 
-      <!-- Portfolio-->
-      <div fxLayout.xs="column" fxLayoutGap="20px" fxLayout.gt-xs="row-wrap">
-        <app-project-card *ngFor="let project of projects" [data]='project'></app-project-card>
+        <!-- Portfolio-->
+        <div fxLayout.xs="column" fxLayoutGap="20px" fxLayout.gt-xs="row-wrap">
+          <app-project-card *ngFor="let project of projects" [data]='project'></app-project-card>
+        </div>
+        <div></div>
+
+        <!-- Testimonials-->
+        <div></div>
+
+        <!-- Contact -->
+        <div id="contact" fxLayout.xs="column" fxLayout.gt-xs="row">
+          <div fxFlex.gt-xs="50%">
+            1
+          </div>
+          <div fxFlex.gt-xs="50%">
+            2
+          </div>
+        </div>
       </div>
-      <div></div>
-
-      <!-- Testimonials-->
-      <div></div>
-
-      <!-- Contact -->
-      <div></div>
-      <!-- Projects -->
-
     </div>
 
 </div>
