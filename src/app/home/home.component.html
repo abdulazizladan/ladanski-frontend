@@ -49,7 +49,9 @@
     </mat-toolbar>
 
     <div id="main" fxLayout="row" fxLayoutAlign="center">
-      <div fxFlex="100%" fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center center">
+      <div fxFlex.xs="100%" fxFlex.gt-sm="1024px" fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center center">
+
+        <div fxFlex.xs="2px" fxFlex.gt-xs="10px"></div>
         <!-- Banner -->
         <div id="hero"></div>
 
@@ -66,8 +68,9 @@
         <div></div>
 
         <!-- Portfolio-->
-        <div fxLayout.xs="column" fxLayoutGap="20px" fxLayout.gt-xs="row-wrap">
-          <app-project-card *ngFor="let project of projects" [data]='project'></app-project-card>
+        <div fxLayout.xs="column" fxLayoutGap.xs="20px" fxLayoutGap.gt-xs="10px grid" fxLayout.gt-xs="row-wrap">
+          <app-project-card fxFlex.gt-xs=50% *ngFor="let project of projects" [data]='project' fxFlexAlign="stretch">
+          </app-project-card>
         </div>
         <div></div>
 
@@ -75,7 +78,7 @@
         <div></div>
 
         <!-- Contact -->
-        <div id="contact" fxLayout.xs="column" fxLayout.gt-xs="row">
+        <div id="contact" fxLayout.xs="column" fxLayout.gt-xs="row" fxLayoutGap.gt-xs="10px">
           <div fxFlex.gt-xs="50%">
             1
           </div>

@@ -21,12 +21,14 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { InMemoryDbServiceService } from './services/in-memory-db-service.service';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
