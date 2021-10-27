@@ -22,6 +22,7 @@ import { environment } from '../environments/environment';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { InMemoryDbServiceService } from './services/in-memory-db-service.service';
 import { LayoutComponent } from './layout/layout.component';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { LayoutComponent } from './layout/layout.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     StoreModule.forRoot({}, {}),
-    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
+    EffectsModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]
