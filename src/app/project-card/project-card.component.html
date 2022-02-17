@@ -10,6 +10,6 @@
     {{ data.description }}
   </mat-card-content>
   <mat-card-actions align="end">
-    <button mat-flat-button color="primary">View demo</button>
+      <a mat-flat-button color="primary" disabled={{data.disabled}} href={{data.url}}>View demo</a>
   </mat-card-actions>
 </mat-card>
