@@ -1,4 +1,6 @@
-<div style="height: 100%;" fxLayout="column" fxLayoutGap="10px;">
+<div style="height: 100%;" fxLayout="column" fxLayoutGap="5px;">
+
+  <!-- Navigation -->
     <mat-toolbar color="primary" class="mat-elevation-z1" style="min-height: 40px !important; height: 30px !important;">
         <mat-toolbar-row fxLayout="row" style="min-height: 40px !important; height: 30px !important;">
             <img src="../../assets/logo.svg">
@@ -49,7 +51,7 @@
     </mat-toolbar>
 
     <div id="main" fxLayout="row" fxLayoutAlign="center">
-      <div fxFlex.xs="100%" fxFlex.gt-sm="1024px" fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center center">
+      <div fxFlex.xs="100%" fxFlex.gt-sm="1024px" fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="center center">
 
         <div fxFlex.xs="2px" fxFlex.gt-xs="10px"></div>
         <!-- Banner -->
@@ -58,36 +60,61 @@
         </div>
 
         <!-- About -->
+        <div class="section" style="text-align: center;">
+          <h2>About</h2>
+        </div>
         <div></div>
 
         <!-- Services-->
+        <div class="section" style="text-align: center;">
+          <h2>Services</h2>
+        </div>
         <div></div>
 
         <!--Experiences-->
+        <div class="section" style="text-align: center;">
+          <h2>Experiences</h2>
+        </div>
         <div></div>
 
         <!-- Skills-->
+        <div class="section" style="text-align: center;">
+          <h2>Skills</h2>
+        </div>
         <div></div>
 
         <!-- Portfolio-->
-        <div fxLayout.xs="column" fxLayoutGap.xs="20px" fxLayoutGap.gt-xs="10px grid" fxLayout.gt-xs="row-wrap">
-          <app-project-card fxFlex.gt-xs=50% *ngFor="let project of projects" [data]='project' fxFlexAlign="stretch">
-          </app-project-card>
+        <div class="section" style="text-align: center;">
+          <h2>Portfolio</h2>
+          <div fxLayout.xs="column" fxLayoutGap.xs="20px" fxLayoutGap.gt-xs="10px grid" fxLayout.gt-xs="row-wrap">
+            <app-project-card fxFlex.gt-xs=50% *ngFor="let project of projects" [data]='project' fxFlexAlign="stretch">
+            </app-project-card>
+          </div>
         </div>
+
         <div></div>
 
         <!-- Testimonials-->
+        <div class="section" class="section" style="text-align: center;">
+          <h2>Testimonials</h2>
+        </div>
         <div></div>
 
         <!-- Contact -->
-        <div id="contact" fxLayout.xs="column" fxLayout.gt-xs="row" fxLayoutGap.gt-xs="10px">
-          <div fxFlex.gt-xs="50%">
-            1
-          </div>
-          <div fxFlex.gt-xs="50%">
-            2
+        <div class="section" style="text-align: center;">
+          <h2>Contact</h2>
+          <div id="contact" fxLayout.xs="column" fxLayout.gt-xs="row" fxLayoutGap.gt-xs="10px">
+            <div fxFlex.gt-xs="50%">
+              1
+            </div>
+            <div fxFlex.gt-xs="50%">
+              2
+            </div>
           </div>
         </div>
+
+
+
       </div>
     </div>
 

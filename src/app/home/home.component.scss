@@ -10,8 +10,19 @@
     div{
       padding: 25px;
       text-align:center;
-      background-color: grey;
+      box-shadow: grey 2px 2px 2px;;
       aspect-ratio: 16/5;
     }
+  }
+}
+
+.section{
+  width: 100%;
+  padding: 15px;
+  background-color: #fcfcfc;
+  box-shadow: grey 2px 2px 2px;
+  border-radius: 5px;
+  h2{
+    border-bottom: 1px solid red;
   }
 }
