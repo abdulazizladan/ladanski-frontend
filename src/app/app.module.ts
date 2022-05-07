@@ -23,13 +23,15 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 import { InMemoryDbServiceService } from './services/in-memory-db-service.service';
 import { LayoutComponent } from './layout/layout.component';
 import { EffectsModule } from '@ngrx/effects';
+import { NftComponent } from './nft/nft.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProjectCardComponent,
-    LayoutComponent
+    LayoutComponent,
+    NftComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,60 @@
+<div style="height: 100%;" fxLayout="column" fxLayoutGap="5px;">
+
+  <!-- Navigation -->
+    <mat-toolbar color="primary" class="mat-elevation-z1" style="min-height: 40px !important; height: 30px !important;">
+        <mat-toolbar-row fxLayout="row" style="min-height: 40px !important; height: 30px !important;">
+            <img src="../../assets/logo.svg">
+            <span fxFlex="1 1 auto"></span>
+            <span fxHide fxShow.gt-sm>
+                <button mat-button>
+                    Home
+                </button>
+                <button mat-button>
+                    About
+                </button>
+                <button mat-button>
+                    Services
+                </button>
+                <button mat-button>
+                    Experiences
+                </button>
+                <button mat-button>
+                    Skills
+                </button>
+                <button mat-button>
+                    Portfolio
+                </button>
+                <button mat-button>
+                    Testimonials
+                </button>
+                <button mat-button>
+                  NFTs
+                </button>
+                <button mat-button>
+                    Contact
+                </button>
+            </span>
+            <button fxHide fxShow.lt-md mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <ng-template matMenuContent>
+                    <button mat-menu-item>Home</button>
+                    <button mat-menu-item>About</button>
+                    <button mat-menu-item>Services</button>
+                    <button mat-menu-item>Experiences</button>
+                    <button mat-menu-item>Skills</button>
+                    <button mat-menu-item>Portfolio</button>
+                    <button mat-menu-item>Testimonials</button>
+                    <button mat-menu-item>NFTs</button>
+                    <button mat-menu-item>Contact</button>
+                </ng-template>
+              </mat-menu>
+        </mat-toolbar-row>
+
+    </mat-toolbar>
+    <div id="nft"></div>
+    <img src="./assets/NFT-List.png">
+    <a href="https://discord.com/channels/952414372637052938/967754641326624788/967754642098368522"></a>
+  <p>nft works!</p>
+</div>

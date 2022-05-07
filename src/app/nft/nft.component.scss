@@ -1,0 +1,38 @@
+#main{
+  width: 100%;
+  img{
+    aspect-ratio: 1/1;
+  }
+  #hero{
+    width: 100%;
+    background-color:grey;
+    aspect-ratio: 16/5;
+  }
+  #contact{
+    width: 100%;
+    div{
+      padding: 25px;
+      text-align:center;
+      box-shadow: grey 2px 2px 2px;;
+      aspect-ratio: 16/5;
+    }
+  }
+}
+
+.section{
+  width: 100%;
+  padding: 15px;
+  background-color: #fcfcfc;
+  box-shadow: grey 2px 2px 2px;
+  border-radius: 5px;
+  h2{
+    border-bottom: 1px solid red;
+  }
+}
+
+#nft{
+  width: 100px;
+  height: 100px;
+  //aspect-ratio: 1/1;
+  //background-image: url('../assets/NFT-List.png')
+}
